@@ -10,7 +10,7 @@ submitBtn.addEventListener("click",()=>{
     const angleOneValue  = Number(angleOne.value)
     const angleTwoValue  = Number(angleTwo.value)
     const angleThreeValue  = Number(angleThree.value)
-    if(angleOneValue && angleTwoValue && angleThreeValue){
+    if(angleOneValue>=1 && angleTwoValue>=1 && angleThreeValue>=1){
     if(angleOneValue+angleTwoValue+angleThreeValue===180){
         message.innerText="Yeah it is a triangle"
     
