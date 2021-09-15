@@ -2,10 +2,10 @@
 // const questionTwo = document.quiz.persona.value;
 const submitBtn =  document.getElementById("submit-btn");
 const message = document.querySelector(".message");
-const correctAnswers=["10cm","Ranveer Singh"];
+const correctAnswers=["10cm","Ranveer Singh","Triangle","Right"];
 const quizForm = document.querySelector("#quiz")
 
-let score=0;
+
 submitBtn.addEventListener("click",()=>{
    let score =0 ;
    let index = 0;
@@ -13,11 +13,12 @@ submitBtn.addEventListener("click",()=>{
    for(value of formData.values()){
     if(value===correctAnswers[index]){
         score++
+        console.log(value)
     }
     index++
  
    }
- message.innerText=`Your score is ${score}/2`
+ message.innerText=`Your score is ${score}/4`
 })
 
 
