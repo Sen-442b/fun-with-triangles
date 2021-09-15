@@ -18,7 +18,7 @@ submitBtn.addEventListener("click",()=>{
     index++
  
    }
- message.innerText=`Your score is ${score}/5`
+ message.innerText=`Your score is ${score}/4`
 })
 
 
